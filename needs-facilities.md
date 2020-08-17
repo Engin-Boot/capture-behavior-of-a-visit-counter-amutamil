@@ -2,12 +2,12 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given
+  Given 
   When
   Then
 
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+  Given total number of seating capacity
+  When all seats are occupied
+  Then alert seats are filled and no available seats
