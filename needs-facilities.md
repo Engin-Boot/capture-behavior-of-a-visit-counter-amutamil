@@ -2,12 +2,22 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given the operating days of week and counts on each day
-  When manager asks for visitors trend
-  Then report number of visitors on each day and highlight max and min
+  Given :
+  Working server,
+  The operating days of week and counts on each day,
+  When  :
+  Manager asks for visitors on specific days.
+  Then  :
+  Display number of visitors on each day,
+  Highlight max and min visitors.
 
 Scenario: Alert when seating capacity is full
 
-  Given total number of seating capacity
-  When all seats are occupied
-  Then alert seats are filled and no available seats
+  Given :
+  Total number of seating capacity,
+  Occupied seats count,
+  Working server.
+  When  :
+  All seats are occupied.
+  Then  :
+  Alert seats are filled.
