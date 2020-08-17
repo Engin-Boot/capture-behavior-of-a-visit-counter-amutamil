@@ -2,17 +2,21 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given : the working server which stores "number of patients visited hospital during working days and holidays seperately"
-  When : director asks for the count on holidays and working days 
-  Then show the count
+  Given : The server is working and count stored in server.
+  When  : Director asks for "Count on holidays" and "Working days".
+  Then  : Display the "Count on holidays" and "Working days".
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given
-  Total number of cars capacity that the parking area can hold
-  Total number of specialists
-  Already occupied parking slots
+  Given :
+  Working server,
+  Total capacity of the parking area,
+  Total number of specialists,
+  Already occupied parking slots.
+  When  :
+  Director asks to "compute parking slots".
+  Then  :
+  Display the "Parking slots available".
   
-  When : the difference between total capacity and occupied is equal to total number of specialists
   
-  Then Never allow any other for parking.
+  
