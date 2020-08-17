@@ -17,6 +17,3 @@ Scenario: Compute parking slots to reserve for visiting specialists
   Director asks to "compute parking slots".
   Then  :
   Display the "Parking slots available".
-  
-  
-  
