@@ -18,6 +18,6 @@ Scenario: Alert when seating capacity is full
   Occupied seats count,
   Working server.
   When  :
-  All seats are occupied.
+  No seats available.
   Then  :
-  Alert seats are filled.
+  Alert no seats.
