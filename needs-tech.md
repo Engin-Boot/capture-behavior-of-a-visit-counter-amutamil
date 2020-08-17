@@ -31,4 +31,3 @@ Scenario: Reconcile counts if the sensor is offline for a while
   Server reconnects.
   Then  :
   Update count in server from local storage.
-  
