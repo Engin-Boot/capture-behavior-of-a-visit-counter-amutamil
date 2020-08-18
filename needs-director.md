@@ -14,6 +14,6 @@ Scenario: Compute parking slots to reserve for visiting specialists
   Total number of specialists,
   Already occupied parking slots.
   When  :
-  Director asks to "compute parking slots".
+  Director asks "compute parking slots".
   Then  :
   Display the "Parking slots available".
